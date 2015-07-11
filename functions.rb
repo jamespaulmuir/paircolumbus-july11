@@ -20,13 +20,6 @@ class Functions
     if numbers
       sum += sum_recursion(numbers.pop, sum)
     end
-
     sum
   end
-
-
-  def combine_lists(list1, list2)
-    list1.zip(list2).flatten
-  end
-
 end
