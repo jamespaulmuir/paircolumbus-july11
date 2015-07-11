@@ -9,6 +9,9 @@ class Functions
   end
 
   def sum_while(numbers)
-
+    sum = 0
+    while number = numbers.pop
+      sum += number
+    end
   end
 end
