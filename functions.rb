@@ -23,4 +23,10 @@ class Functions
 
     sum
   end
+
+
+  def combine_lists(list1, list2)
+    list1.zip(list2).flatten
+  end
+
 end
