@@ -17,9 +17,15 @@ class Functions
   end
 
   def sum_recursion(numbers, sum=0)
-    if numbers
-      sum += sum_recursion(numbers.pop, sum)
-    end
-    sum
+    number = numbers.pop
+    return sum unless number
+    sum += number
+    sum_recursion(numbers, sum)
   end
+
+
+  def combine_lists(list1, list2)
+    list1.zip(list2).flatten
+  end
+
 end
