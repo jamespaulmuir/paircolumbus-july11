@@ -13,5 +13,7 @@ class Functions
     while number = numbers.pop
       sum += number
     end
+
+    sum
   end
 end
