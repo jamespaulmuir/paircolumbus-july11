@@ -31,7 +31,7 @@ class Functions
   def fibonnaci_generator
     fn = [0, 1]
     while fn.length < 100
-      fn << fn[fn.length-1] + fn[fn.length-2]
+      fn << (fn[fn.length-1] + fn[fn.length-2])
     end
     fn
   end
