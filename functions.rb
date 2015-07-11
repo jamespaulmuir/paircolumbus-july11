@@ -18,7 +18,7 @@ class Functions
 
   def sum_recursion(numbers, sum=0)
     if numbers
-      sum += sum_recursion(numbers, sum)
+      sum += sum_recursion(numbers.pop, sum)
     end
 
     sum
