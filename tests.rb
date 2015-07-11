@@ -2,7 +2,6 @@ require 'rspec'
 
 require './functions.rb'
 
-input = [1,2,3,4,5]
 expected_result = 15
 
 array1 = [1,2,3,4,5]
@@ -13,22 +12,25 @@ RSpec.describe 'Problem 1', "forLoop" do
   functions = Functions.new
 
   describe "forLoop" do
+    input = [1,2,3,4,5]
     it "should compute the sum" do
         expect(functions.sum_for input).to eq(expected_result)
     end
   end
 
   describe "whileLoop" do
+    input = [1,2,3,4,5]
     it "should compute the sum" do
       expect(functions.sum_while input).to eq(expected_result)
     end
   end
 
-  # describe "recursion" do
-  #   it "should compute the sum" do
-  #     expect(functions.sum_recursion input).to eq(expected_result)
-  #   end
-  # end
+  describe "recursion" do
+    input = [1,2,3,4,5]
+    it "should compute the sum" do
+      expect(functions.sum_recursion(input)).to eq(expected_result)
+    end
+  end
 end
 
 RSpec.describe 'Problem 2', "forLoop" do
