@@ -4,11 +4,11 @@ class Functions
     sum = 0
     numbers.each do |number|
       sum += number
-      sum
     end
+    sum
   end
 
   def sum_while(numbers)
-    
+
   end
 end
